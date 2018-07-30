@@ -15,19 +15,19 @@ public interface ServiceSample_Service {
 	List<DomainEntitySample> findByCondition(String condition);
 
 	// ID로 조회
-	DomainEntitySample findDomainEntity(String entityId);
+	DomainEntitySample findDomainEntity(String id);
 
 	// 등록/생성 
 	void registerDomainEntity(ServiceDataObjectSample_Cdo cdo);
 
 	// 수정 
-	void modifyDomainEntity(String entityId, ServiceDataObjectSample_Cdo cdo);
+	void modifyDomainEntity(String id, ServiceDataObjectSample_Cdo cdo);
 
 	// 수정 
-	void modifyDomainEntity(String entityId, NameValueList nameValues);
+	void modifyDomainEntity(String id, NameValueList nameValues);
 
 	// 삭제
-	void removeDomainEntity(String entityId);
+	void removeDomainEntity(String id);
 
 	// 기타
 	void checkDomainEntity(ServiceDataObjectSample_Rdo rdo);
