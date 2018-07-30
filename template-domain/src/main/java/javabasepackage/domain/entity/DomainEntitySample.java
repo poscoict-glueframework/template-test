@@ -35,18 +35,9 @@ public class DomainEntitySample implements Serializable, JsonSerializable {
 	}
 
 	// TOOD : 여기서부터 개발자가 직접 추가할 항목과 getter/setter 들임.
-	private String entityId;
 	private String condition;
 	private String attr1;
 	private String attr2;
-
-	public String getEntityId() {
-		return entityId;
-	}
-
-	public void setEntityId(String entityId) {
-		this.entityId = entityId;
-	}
 
 	public String getCondition() {
 		return condition;

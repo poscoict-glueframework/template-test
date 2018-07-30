@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="fileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>app_debug_log.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="javabasepackage">
+        <level value="trace" />
+    </logger>
+    <logger name="com.zaxxer.hikari.pool.HikariPool">
+        <level value="info" /> <!--  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)  -->
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="fileAppender" />
+    </root>
+</configuration>

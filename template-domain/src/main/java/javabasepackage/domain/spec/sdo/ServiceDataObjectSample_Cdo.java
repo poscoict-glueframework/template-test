@@ -4,18 +4,9 @@ import javabasepackage.domain.JsonSerializable;
 import javabasepackage.domain.JsonUtil;
 
 public class ServiceDataObjectSample_Cdo implements JsonSerializable {
-	private String entityId;
 	private String condition;
 	private String attr1;
 	private String attr2;
-
-	public String getEntityId() {
-		return entityId;
-	}
-
-	public void setEntityId(String entityId) {
-		this.entityId = entityId;
-	}
 
 	public String getCondition() {
 		return condition;
